@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="World Trigger: Notebook's Subsection" type="Source" source="World Trigger: Notebook's Subsection" id="ID_DSQD_SOURCE_WORLD_TRIGGER_NOTEBOOK_SUBSECTION">
+        <description>
+            <p>A small collection of content based on the series 'World Trigger'. Original concepts are not mine, but I have written this file.</p>
+        </description>
+        <setters>
+            <set name="abbreviation">TRIGGER</set>
+            <set name="url">https://worldtrigger.fandom.com/wiki/Main_Page</set>
+            <set name="image">https://pbs.twimg.com/media/EoHs8JxVoAIFGud.jpg</set>
+            <set name="author" abbreviation="DSQD" url="https://aurorabuilder.com/">DaSquid</set>
+            <set name="official">false</set>
+            <set name="core">false</set>
+            <set name="release">202104XX</set>
+        </setters>
+    </element>
+    <element name="Trigger User" type="Class" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_TRIGGER_USER">
+        <description>
+            <p class="flavor">Versatile warriors that use advanced technology in order to wield energy known as Trion in a vast number of ways.</p>
+            <h5>HIT POINTS</h5>
+            <p>    Hit Dice:  1d8 per Trigger User level</p>
+            <p>    Hit Points at 1st Level:  8 + your Constitution modifier</p>
+            <p>    Hit Points at Higher Levels:  1d8 (or 5) + your Constitution modifier per Trigger User level after 1st</p>
+            <p>    Be warned that your physical body only has hit points equal to your Constitution stat. Your calculated hit points belong to your Trion Body.</p>
+            <h5>PROFICIENCIES</h5>
+            <p>    Armor:  None</p>
+            <p>    Weapons:  Trigger Holders</p>
+            <p>    Tools:  Tinker's Tools</p>
+            <p>    Saving Throws:  Constitution and Wisdom</p>
+            <p>    Skills:  Choose two skills from Athletics, Acrobatics, Investigation, Insight, Perception, and Survival</p>
+            <h5>EQUIPMENT</h5>
+            <p>    - A Trigger Holder</p>
+            <p>    - A set of Tinker's tools</p>
+            <p>    - A dagger</p>
+            <p>    - a) a scholar's pack or b) an explorer's pack</p>
+            <table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Trigger Equips</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>2</td><td class="left">Trion Usage, Standard Equipment</td></tr>
+				<tr><td> 2nd</td><td>2</td><td class="left">Action Surge (one use)</td></tr>
+				<tr><td> 3rd</td><td>2</td><td class="left">Trigger Specialization</td></tr>
+				<tr><td> 4th</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>2</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 7th</td><td>4</td><td class="left">Trion Usage Upgrade</td></tr>
+				<tr><td> 8th</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>4</td><td class="left">Dodge</td></tr>
+				<tr><td>10th</td><td>4</td><td class="left">Trion Usage Upgrade</td></tr>
+				<tr><td>11th</td><td>6</td><td class="left">Extra Attack (2)</td></tr>
+				<tr><td>12th</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>6</td><td class="left">Trigger Specialization Upgrade</td></tr>
+				<tr><td>14th</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>6</td><td class="left">Composite Bullets</td></tr>
+				<tr><td>16th</td><td>8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>8</td><td class="left">Action Surge (two uses), Trigger Mastery</td></tr>
+				<tr><td>18th</td><td>8</td><td class="left">Potent Trion</td></tr>
+				<tr><td>19th</td><td>8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>8</td><td class="left">Extra Attack (3)</td></tr>
+			</table>
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRION_USAGE" />
+			<div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_STANDARD_EQUIPMENT" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" />
+			<div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_SPECIALIZATION" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_DODGE" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_COMPOSITE_BULLETS" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_MASTERY" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_POTENT_TRION" />
+        </description>
+        <sheet display="false">
+            <description>Versatile warriors that use advanced technology in order to wield energy known as Trion in a vast number of ways.</description>
+        </sheet>
+        <setters>
+            <set name="short">Versatile warriors that use advanced technology in order to wield energy known as Trion in a vast number of ways.</set>
+            <set name="hd">d8</set>
+        </setters>
+        <spellcasting name="Trigger User" ability="Wisdom" prepare="false">
+            <list>Trigger_User</list>
+        </spellcasting>
+        <rules>
+            <grant type="Proficiency" id="ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER" requirements="!ID_DSQD_TRIGGER_MULTICLASS_TRIGGER_USER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_DSQD_TRIGGER_MULTICLASS_TRIGGER_USER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_DSQD_TRIGGER_MULTICLASS_TRIGGER_USER"/>
+            <select type="Proficiency" name="Skill Proficiency (Trigger User)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_DSQD_TRIGGER_MULTICLASS_TRIGGER_USER"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRION_USAGE" level="1"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_STANDARD_EQUIPMENT" level="1"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" level="2"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_SPECIALIZATION" level="3"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_DODGE" level="9"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_COMPOSITE_BULLETS" level="15"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_MASTERY" level="17"/>
+            <grant type="Class Feature" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_POTENT_TRION" level="18"/>
+        </rules>
+        <multiclass id="ID_DSQD_TRIGGER_MULTICLASS_TRIGGER_USER">
+            <prerequisite>Constitution 15 or Dexterity 15</prerequisite>
+            <requirements>([con:15]||[dex:15])</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Trigger Holders</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER"/>
+            </rules>
+        </multiclass>
+    </element>
+    <element name="Weapon Proficiency (Trigger Holder)" type="Proficiency" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER">
+        <sheet alt="Trigger Holders" />
+    </element>
+    <element name="Trigger Holder" type="Item" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_ITEM_TRIGGER_HOLDER">
+        <description>
+            <p>A small handheld device that grants the user a substitute body as well as weapons made from Trion.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.1">0.1 lbs.</set>
+            <set name="stackable">false</set>
+        </setters>
+    </element>
+    <element name="Radar (Standard Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_RADAR">
+        <supports>Trigger_User</supports>
+        <description>
+            <p>Declare a value from 1-20 and either 'greater' or 'less'. A small disc shows you the location (but not elevation) of each sentient creature within range whose Constitution stat matches the chosen constraints. Marked individuals appear regardless of constraints.</p>
+        </description>
+        <setters>
+            <set name="keywords">radar, standard</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration">up to 30 seconds</set>
+            <set name="range">100 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Kogetsu (Attacker Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_KOGETSU">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER, ID_DSQD_TRIGGER_SELECTION_KOGETSU</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 5 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+        </setters>
+    </element>
+    <element name="Raygust (Attacker Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_RAYGUST">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_RAYGUST</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 2 Trion Points to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 2 Trion Points.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to 1.5 * your Constitution stat rounded up. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 5 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Special</h2>
+            <p>You can spend a bonus action to change this weapon into Shield Mode or back to Blade Mode. While in Shield Mode, your AC increases by 2, but it is treated as a shield, losing its attack action. While in Shield Mode, this weapon only takes damage from attack rolls higher than 2 + your AC, and does not takes damage from spells. Also, subtract damage equal to your Constitution modifier from all incoming damage unless you are being flanked.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="6">6 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d10</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+        </setters>
+    </element>
+    <element name="Scorpion (Attacker Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_SCORPION">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_SCORPION</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to half your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 3 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Special</h2>
+            <p>When you are targeted by a single-target attack, you can spend a reaction to parry it. When you do so, this weapon automatically takes damage, but you do not take damage up to this weapon's current hit points.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+        </setters>
+    </element>
+    <element name="Kogetsu: Spear (Attacker Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_KOGETSU_SPEAR">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 5 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 lbs.</set>
+            <set name="slot">twohand</set>
+            <set name="range">5/10</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+        </setters>
+    </element>
+    <element name="Sogetsu (Attacker Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_SOGETSU">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_SOGETSU</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 5 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+        </setters>
+    </element>
+    <element name="Rifle (Gunner Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_RIFLE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_RIFLE, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 20. Making an attack with this weapon decreases its current ammo by 4 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 2 Trion Points to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="10">10 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="range">30/100</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">20</set>
+        </setters>
+    </element>
+    <element name="Launcher (Gunner Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection"  id="ID_DSQD_TRIGGER_WEAPON_LAUNCHER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_LAUNCHER, ID_DSQD_TRIGGER_SELECTION_METEOR</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 4. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Meteor (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 2 Trion Points to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="14">14 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="range">40/80</set>
+            <set name="damage" type="piercing">2d10</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">4</set>
+        </setters>
+    </element>
+    <element name="Handgun (Gunner Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_HANDGUN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_HANDGUN, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 8. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 1 Trion Point to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="range">10/40</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">8</set>
+        </setters>
+    </element>
+    <element name="Minigun (Gunner Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_MINIGUN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_MINIGUN, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 100. Making an attack with this weapon decreases its current ammo by 10 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 3 Trion Points to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="20">20 lbs.</set>
+            <set name="slot">twohand</set>
+            <set name="range">50/100</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">100</set>
+        </setters>
+    </element>
+    <element name="Shotgun (Gunner Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_SHOTGUN">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_SHOTGUN, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 2. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 1 Trion Point to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="8">8 lbs.</set>
+            <set name="slot">onehand</set>
+            <set name="range">5/15</set>
+            <set name="damage" type="piercing">2d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">2</set>
+        </setters>
+    </element>
+    <element name="Eaglet (Sniper Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_EAGLET">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_EAGLET, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 4. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 1 Trion Point to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="12">12 lbs.</set>
+            <set name="slot">twohand</set>
+            <set name="range">100/300</set>
+            <set name="damage" type="piercing">2d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">4</set>
+        </setters>
+    </element>
+    <element name="Ibis (Sniper Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_IBIS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_IBIS, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 1. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 1 Trion Point to reload this weapon. to reload this weapon. The number of points you spend is determined by the Reload Table (see "Trion Usage"). Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="16">16 lbs.</set>
+            <set name="slot">twohand</set>
+            <set name="range">100/200</set>
+            <set name="damage" type="piercing">3d8</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">1</set>
+        </setters>
+    </element>
+    <element name="Lightning (Sniper Trigger)" type="Weapon" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_WEAPON_LIGHTNING">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_TRIGGER_HOLDER, ID_DSQD_TRIGGER_SELECTION_LIGHTNING, ID_DSQD_TRIGGER_SELECTION_ASTEROID</requirements>
+        <description>
+            <h2>Trion</h2>
+            <p>You must spend 1 Trion Point to summon this Trigger. If you disperse this weapon without it being destroyed while its durability is above half, you regain 1 Trion Point.</p>
+            <h2>Durability</h2>
+            <p>This weapon has hit points equal to your Constitution stat. When you take damage as a result of being attacked or failing a saving throw as a result of a spell with this weapon equipped, if the attack roll was lower than 2 + your AC, this weapon takes damage as well. If you are wielding two Attacker and/or Gunner Triggers, only one of them takes damage at a time. If this weapon's hit points reach 0, this weapon is destroyed.</p>
+            <h2>Ammunition</h2>
+            <p>Your ammo capacity is 10. Making an attack with this weapon decreases its current ammo by 1 until it is reloaded.</p>
+            <h2>Reload</h2>
+            <p>You must spend Trion Points and have Asteroid (Shooter Trigger) equipped in your inactive Trigger Holder column to reload this weapon. It costs 1 Trion Point to reload this weapon. Reloading requires an action.</p>
+        </description>
+        <setters>
+            <set name="category">World Trigger Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="7">7 lbs.</set>
+            <set name="slot">twohand</set>
+            <set name="range">50/150</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="proficiency">ID_DSQD_TRIGGER_WEAPON_PROFICIENCY_TRIGGER_HOLDER</set>
+            <set name="reload">10</set>
+        </setters>
+    </element>
+    <element name="Asteroid (Shooter Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_ASTEROID_LEFT">
+        <supports>Trigger_User</supports>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes fly forwards as a flurry of lasers.</p>
+            <p>All creatures between you and a target in range (including the target) must make a Dexterity saving throw of a DC equal to 15 + your Wisdom modifier. A creature takes 2d8 piercing damage on a failed save. The DC increases by 5 if this is used as a reaction.</p>
+            <p>This Trigger costs 1 Trion Point to use.</p>
+            <p>You must have this Trigger equipped to use most Gunner and Sniper Triggers.</p>
+        </description>
+        <setters>
+            <set name="keywords">asteroid, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hound (Shooter Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_HOUND_LEFT">
+        <supports>Trigger_User</supports>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes spread out, only to find their target again.</p>
+            <p>Select a creature in range. That creature takes 2d8 piercing damage. You do not need line of sight as long as you have seen the target and they are in range.</p>
+            <p>This Trigger costs 2 Trion Points to use. For each additional point you spend (max 6 points total), the damage increases by 1d8.</p>
+        </description>
+        <setters>
+            <set name="keywords">hound, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">80 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Meteor (Shooter Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_METEOR_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You expel a cube of Trion that rockets towards a point within range, exploding on impact.</p>
+            <p>All creatures within 5 ft of the selected point must make a Dexterity saving throw of a DC equal to 15 + your Wisdom modifier. A creature takes 3d10 radiant damage on a failed save, or half as much on a successful one.</p>
+            <p>This Trigger costs 3 Trion Points to use.</p>
+            <p>You must have this Trigger equipped to use the Launcher Trigger.</p>
+        </description>
+        <setters>
+            <set name="keywords">meteor, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">50 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Viper (Shooter Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_VIPER_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes move along a preset path, tearing through things in its path.</p>
+            <p>Select three targets in range (you can select the same target more than once). Make a ranged attack using your Wisdom stat against each target. On a hit, the first target takes 3d8 piercing damage, the second target takes 2d8 piercing damage, and the third target takes 1d8 piercing damage. You do not need line of sight. However, if you do not have line of sight, you roll your attacks with disadvantage.</p>
+            <p>This Trigger costs 4 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">viper, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">80 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Escudo (Defense Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_ESCUDO_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You touch a solid surface and channel Trion into it, causing a reinforced wall to spring out in front of you.</p>
+            <p>The wall blocks line of sight and has hit points equal to twice your Constitution stat. You can dismiss the wall as a bonus action. The wall will block incoming damage up to its hit points. Any creature behind the wall when it breaks will take any leftover damage.</p>
+            <p>This Trigger costs 8 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">escudo, defense</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 reaction</set>
+            <set name="duration">30 seconds</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shield (Defense Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_SHIELD_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You project a transparent disc to block incoming attacks.</p>
+            <p>Select either a point or a target in range.</p>
+            <p>Point: The shield has hit points equal to your Constitution modifier. Attacks that would be forced to travel through the selected area cause the attackee to gain 2 AC for that attack only, and, if the attack hits, the shield takes as much damage as it can. Any leftover damage continues to the attackee.</p>
+            <p>Target: The shield has hit points equal to half your Constitution modifier, and follows the target up to 25 ft away from you. The shield will dismiss itself if the target moves more than 25 ft away from you. The target gains 1 AC as long as the shield is following them. Successful attacks that would be forced to travel through the direction the shield is facing cause the shield takes as much damage as it can. Any leftover damage continues to the attackee.</p>
+            <p>This Trigger costs 3 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">shield, defense</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 reaction</set>
+            <set name="duration">Start of your next turn</set>
+            <set name="range">25 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bagworm (Misc. Trigger) [Left]" type="Item" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_ITEM_BAGWORM_LEFT">
+        <description>
+			<p>A cloak that protects its wearer from divination spells and any effects that would reveal the wearer's position remotely, except for allies' effects.</p>
+            <p>This Trigger costs 3 Trion Points to summon.</p>
+		</description>
+		<setters>
+			<set name="category">World Trigger Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lbs.</set>
+			<set name="stackable">false</set>
+		</setters>
+    </element>
+    <element name="Chameleon (Misc. Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_CHAMELEON_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You are under the effects of the Invisibility spell for the duration or until you dismiss this effect.</p>
+            <p>This Trigger costs 4 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">chameleon, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Dummy Beacon (Misc. Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You conjure up to three small orbs within range that float around mimicking your energy signature. Detection effects and divination magic will pick up these signals.</p>
+            <p>This Trigger costs a number of Trion Points equal to the number of orbs you conjure.</p>
+        </description>
+        <setters>
+            <set name="keywords">dummy, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">5 minutes</set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Grasshopper (Misc. Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You conjure up to three small platforms that propel whatever touches their surface 10 ft in a jumpable direction. Each platform disappears once it propels something.</p>
+            <p>While being propelled, you cannot be targeted for an attack of opportunity. Also, if you have an Attacker Trigger equipped, you can make a swipe attack on one creature that you pass by for each time you are propelled.</p>
+            <p>Swipe Attack: Make a standard melee attack roll. On a hit, the target takes half damage.</p>
+            <p>This Trigger costs 1 Trion Point to use for each platform you conjure.</p>
+        </description>
+        <setters>
+            <set name="keywords">grasshopper, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration"> - </set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spider (Misc. Trigger) [Left]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_SPIDER_LEFT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You conjure six wires from Trion cubes, making the terrain difficult for your enemies.</p>
+            <p>There must be at least two solid surfaces in range to attach the wires to. Allies can see the wires, but enemies will have to pass a DC 15 Perception check to see them.</p>
+            <p>Enemies that are within wired areas have disadvantage on their attack rolls and have their movement speed halved.</p>
+        </description>
+        <setters>
+            <set name="keywords">spider, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration"> - </set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Asteroid (Shooter Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_ASTEROID_RIGHT">
+        <supports>Trigger_User</supports>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes fly forwards as a flurry of lasers.</p>
+            <p>All creatures between you and a target in range (including the target) must make a Dexterity saving throw of a DC equal to 15 + your Wisdom modifier. A creature takes 2d8 piercing damage on a failed save. The DC increases by 5 if this is used as a reaction.</p>
+            <p>This Trigger costs 1 Trion Point to use.</p>
+            <p>You must have this Trigger equipped to use most Gunner and Sniper Triggers.</p>
+        </description>
+        <setters>
+            <set name="keywords">asteroid, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Hound (Shooter Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_HOUND_RIGHT">
+        <supports>Trigger_User</supports>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes spread out, only to find their target again.</p>
+            <p>Select a creature in range. That creature takes 2d8 piercing damage. You do not need line of sight as long as you have seen the target and they are in range.</p>
+            <p>This Trigger costs 2 Trion Points to use. For each additional point you spend (max 6 points total), the damage increases by 1d8.</p>
+        </description>
+        <setters>
+            <set name="keywords">hound, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">80 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Meteor (Shooter Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_METEOR_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You expel a cube of Trion that rockets towards a point within range, exploding on impact.</p>
+            <p>All creatures within 5 ft of the selected point must make a Dexterity saving throw of a DC equal to 15 + your Wisdom modifier. A creature takes 3d10 radiant damage on a failed save, or half as much on a successful one.</p>
+            <p>This Trigger costs 3 Trion Points to use.</p>
+            <p>You must have this Trigger equipped to use the Launcher Trigger.</p>
+        </description>
+        <setters>
+            <set name="keywords">meteor, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">50 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Viper (shooter Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_VIPER_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You expel a cube of Trion that splits into multiple smaller cubes. The smaller cubes move along a preset path, tearing through things in its path.</p>
+            <p>Select three targets in range (you can select the same target more than once). Make a ranged attack using your Wisdom stat against each target. On a hit, the first target takes 3d8 piercing damage, the second target takes 2d8 piercing damage, and the third target takes 1d8 piercing damage. You do not need line of sight. However, if you do not have line of sight, you roll your attacks with disadvantage.</p>
+            <p>This Trigger costs 4 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">viper, shooter</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">80 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Escudo (Defense Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_ESCUDO_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You touch a solid surface and channel Trion into it, causing a reinforced wall to spring out in front of you.</p>
+            <p>The wall blocks line of sight and has hit points equal to twice your Constitution stat. You can dismiss the wall as a bonus action. The wall will block incoming damage up to its hit points. Any creature behind the wall when it breaks will take any leftover damage.</p>
+            <p>This Trigger costs 8 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">escudo, defense</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 reaction</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shield (Defense Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_SHIELD_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You project a transparent disc to block incoming attacks.</p>
+            <p>Select either a point or a target in range.</p>
+            <p>Point: The shield has hit points equal to your Constitution modifier. Attacks that would be forced to travel through the selected area cause the attackee to gain 2 AC for that attack only, and, if the attack hits, the shield takes as much damage as it can. Any leftover damage continues to the attackee.</p>
+            <p>Target: The shield has hit points equal to half your Constitution modifier, and follows the target up to 25 ft away from you. The shield will dismiss itself if the target moves more than 25 ft away from you. The target gains 1 AC as long as the shield is following them. Successful attacks that would be forced to travel through the direction the shield is facing cause the shield takes as much damage as it can. Any leftover damage continues to the attackee.</p>
+            <p>This Trigger costs 3 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">shield, defense</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 reaction</set>
+            <set name="duration">Start of your next turn</set>
+            <set name="range">25 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bagworm (Misc. Trigger) [Right]" type="Item" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_ITEM_BAGWORM_RIGHT">
+        <description>
+			<p>A cloak that protects its wearer from divination spells and any effects that would reveal the wearer's position remotely, except for allies' effects.</p>
+            <p>This Trigger costs 3 Trion Points to summon.</p>
+		</description>
+		<setters>
+			<set name="category">World Trigger Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">0.5 lbs.</set>
+			<set name="stackable">false</set>
+		</setters>
+    </element>
+    <element name="Chameleon (Misc. Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_CHAMELEON_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You are under the effects of the Invisibility spell for the duration or until you dismiss this effect.</p>
+            <p>This Trigger costs 4 Trion Points to use.</p>
+        </description>
+        <setters>
+            <set name="keywords">chameleon, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 minute</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Dummy Beacon (Misc. Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You conjure up to three small orbs within range that float around mimicking your energy signature. Detection effects and divination magic will pick up these signals.</p>
+            <p>This Trigger costs a number of Trion Points equal to the number of orbs you conjure.</p>
+        </description>
+        <setters>
+            <set name="keywords">dummy, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 action</set>
+            <set name="duration">5 minutes</set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Grasshopper (Misc. Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>You conjure up to three small platforms that propel whatever touches their surface 10 ft in a jumpable direction. Each platform disappears once it propels something.</p>
+            <p>While being propelled, you cannot be targeted for an attack of opportunity. Also, if you have an Attacker Trigger equipped, you can make a swipe attack on one creature that you pass by for each time you are propelled.</p>
+            <p>Swipe Attack: Make a standard melee attack roll. On a hit, the target takes half damage.</p>
+            <p>This Trigger costs 1 Trion Point to use for each platform you conjure.</p>
+        </description>
+        <setters>
+            <set name="keywords">grasshopper, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration"> - </set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spider (Misc. Trigger) [Right]" type="Spell" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SPELL_SPIDER_RIGHT">
+        <supports>Trigger_User</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You conjure six wires from Trion cubes, making the terrain difficult for your enemies.</p>
+            <p>There must be at least two solid surfaces in range to attach the wires to. Allies can see the wires, but enemies will have to pass a DC 15 Perception check to see them.</p>
+            <p>Enemies that are within wired areas have disadvantage on their attack rolls and have their movement speed halved.</p>
+        </description>
+        <setters>
+            <set name="keywords">spider, misc</set>
+            <set name="level">0</set>
+            <set name="school">Trigger</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration"> - </set>
+            <set name="range">30 ft</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Trion Usage" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRION_USAGE">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>You have learned to use your Trigger Holder, but it requires Trion from your body. Starting at 1st level, you have Trion Points equal to 3 * your Constitution stat + 5. Activating your Trigger Holder and using Triggers will use these points, and you cannot use either without the necessary points. You can choose to regain Trion Points equal to your Constitution stat on completion of a short rest, but you will gain a level of exhaustion when doing so. Your Trigger Holder cannot be active when you do this. You regain all of your Trion Points on completion of a long rest.</p>
+            <h5>Triggers</h5>
+            <p>Your Trigger Holder has two columns, each with half the number of your accessible slots. It also has an additional slot for a Gunner Trigger. You can only use one Trigger from each column at a time (or one from your extra slot and one from either column), allowing a maximum of two Triggers at a time. You will gain access to more Triggers and Trigger slots as you gain levels in Trigger User.</p>
+            <p>By spending time with tinker's tools and your Trigger Holder, you can swap out what Triggers are in your Trigger Holder. For every Trigger you swap out, youmust spend 1 hour.</p>
+            <table class="class-features">
+				<thead>
+					<tr><td class="col-10">Trigger</td><td class="col-10">Type</td><td class="col-10">Option Match</td><td class="col-10">Trigger User Level</td></tr>
+				</thead>
+				<tr><td>       Kogetsu</td><td>Attacker</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>       Raygust</td><td>Attacker</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>      Scorpion</td><td>Attacker</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>Kogetsu: Spear</td><td>Attacker</td><td>           -           </td><td> 4th</td></tr>
+				<tr><td>       Sogetsu</td><td>Attacker</td><td>           -           </td><td> 7th</td></tr>
+				<tr><td>      Asteroid</td><td> Shooter</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>         Hound</td><td> Shooter</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>        Meteor</td><td> Shooter</td><td>           -           </td><td> 4th</td></tr>
+				<tr><td>         Viper</td><td> Shooter</td><td>           -           </td><td> 7th</td></tr>
+				<tr><td>         Rifle</td><td>  Gunner</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>      Launcher</td><td>  Gunner</td><td>           -           </td><td> 7th</td></tr>
+				<tr><td>       Handgun</td><td>  Gunner</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>       Minigun</td><td>  Gunner</td><td>           -           </td><td> 7th</td></tr>
+				<tr><td>       Shotgun</td><td>  Gunner</td><td>           -           </td><td> 4th</td></tr>
+				<tr><td>        Eaglet</td><td>  Sniper</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>          Ibis</td><td>  Sniper</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>     Lightning</td><td>  Sniper</td><td>           -           </td><td> 1st</td></tr>
+				<tr><td>        Escudo</td><td> Defense</td><td>           -           </td><td> 7th</td></tr>
+                <tr><td>        Shield</td><td> Defense</td><td>           -           </td><td> 4th</td></tr>
+                <tr><td>       Bagworm</td><td>   Misc.</td><td>           -           </td><td> 1st</td></tr>
+                <tr><td>     Chameleon</td><td>   Misc.</td><td>           -           </td><td> 7th</td></tr>
+                <tr><td>  Dummy Beacon</td><td>   Misc.</td><td>           -           </td><td> 4th</td></tr>
+                <tr><td>   Grasshopper</td><td>   Misc.</td><td>           -           </td><td> 7th</td></tr>
+                <tr><td>        Spider</td><td>   Misc.</td><td>           -           </td><td> 4th</td></tr>
+                <tr><td> Phantom Dance</td><td>  Option</td><td>Kogetsu, Kogetsu: Spear</td><td>10th</td></tr>
+                <tr><td>     Whirlwind</td><td>  Option</td><td>Kogetsu, Kogetsu: Spear</td><td>10th</td></tr>
+                <tr><td>      Thruster</td><td>  Option</td><td>                Raygust</td><td>10th</td></tr>
+                <tr><td>   Lead Bullet</td><td>  Option</td><td>Shooter, Gunner, Sniper</td><td>10th</td></tr>
+                <tr><td>     Starmaker</td><td>  Option</td><td>Shooter, Gunner, Sniper</td><td>10th</td></tr>
+			</table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Extra Trigger" supports="WT_Center" number="1" />
+            <select type="Class Feature" name="Trigger Holder Left Column" supports="ID_DSQD_TRIGGER_SELECTION_KOGETSU_LEFT|ID_DSQD_TRIGGER_SELECTION_RAYGUST_LEFT|ID_DSQD_TRIGGER_SELECTION_SCORPION_LEFT|ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_LEFT|ID_DSQD_TRIGGER_SELECTION_SOGETSU_LEFT|ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT|ID_DSQD_TRIGGER_SELECTION_HOUND_LEFT|ID_DSQD_TRIGGER_SELECTION_METEOR_LEFT|ID_DSQD_TRIGGER_SELECTION_VIPER_LEFT" number="1" />
+            <select type="Class Feature" name="Trigger Holder Right Column" supports="ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT|ID_DSQD_TRIGGER_SELECTION_HOUND_RIGHT|ID_DSQD_TRIGGER_SELECTION_METEOR_RIGHT|ID_DSQD_TRIGGER_SELECTION_VIPER_RIGHT|ID_DSQD_TRIGGER_SELECTION_ESCUDO_RIGHT|ID_DSQD_TRIGGER_SELECTION_SHIELD_RIGHT|ID_DSQD_TRIGGER_SELECTION_BAGWORM_RIGHT|ID_DSQD_TRIGGER_SELECTION_CHAMELEON_RIGHT|ID_DSQD_TRIGGER_SELECTION_DUMMY_BEACON_RIGHT|ID_DSQD_TRIGGER_SELECTION_GRASSHOPPER_RIGHT|ID_DSQD_TRIGGER_SELECTION_SPIDER_RIGHT" number="1" />
+            <select type="Class Feature" name="Trigger Holder Left Column (Level 6)" supports="WT_Left" number="1" level="6" />
+            <select type="Class Feature" name="Trigger Holder Right Column (Level 6)" supports="WT_Right" number="1" level="6" />
+            <select type="Class Feature" name="Trigger Holder Left Column (Level 11)" supports="WT_Left" number="1" level="11" />
+            <select type="Class Feature" name="Trigger Holder Right Column (Level 11)" supports="WT_Right" number="1" level="11" />
+            <select type="Class Feature" name="Trigger Holder Left Column (Level 16)" supports="WT_Left" number="1" level="16" />
+            <select type="Class Feature" name="Trigger Holder Right Column (Level 16)" supports="WT_Right" number="1" level="16" />
+        </rules>
+    </element>
+    <element name="Standard Equipment" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_STANDARD_EQUIPMENT">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>Starting at 1st level, you are capable of activating your Trigger Holder and have access to the Radar Trigger.</p>
+            <p>Activating your Trigger holder takes a bonus action and automatically uses the Trion Body Trigger. When your Trigger Holder deactivates, your Trion Body disappears and is replaced by your physical body, and your Trigger Holder cannot be activated again for 5 minutes. You cannot spend Trion Points unless your Trigger Holder is active.</p>
+            <h2>Trion Body (5 Trion Points)</h2>
+            <p>Your physical body is replaced by a body made of Trion. While in your Trion Body, your physical body does not take damage. Remember that your Trion Body has your calculated hit points, while your physical body has hit points equal to your Constitution stat.</p>
+            <p>When your Trion Body runs out of hit points, it is destroyed and your Trigger Holder deactivates.</p>
+            <p>If your Trion Body is reduced to under 1/4 of its max hit points, the attack that caused it removes one of your Trion Body's limbs. In this state, you begin losing 2 Trion Points at the start of each of your turns. Being healed above 1/4 of its max hit points does not remove this effect. This effect is dismissed when your Trigger Holder is deactivated.</p>
+            <p>If your Trigger Holder is deactivated while your Trion Body has more than half its max hit points, you regain 3 Trion Points.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_RADAR" />
+        </description>
+        <sheet display="true">
+            <p>Starting at 1st level, you are capable of activating your Trigger Holder and have access to the Radar Trigger.</p>
+            <p>Activating your Trigger holder takes a bonus action and automatically uses the Trion Body Trigger. When your Trigger Holder deactivates, your Trion Body disappears and is replaced by your physical body, and your Trigger Holder cannot be activated again for 5 minutes. You cannot spend Trion Points unless your Trigger Holder is active.</p>
+            <h2>Trion Body (5 Trion Points)</h2>
+            <p>Your physical body is replaced by a body made of Trion. While in your Trion Body, your physical body does not take damage. Remember that your Trion Body has your calculated hit points, while your physical body has hit points equal to your Constitution stat.</p>
+            <p>When your Trion Body runs out of hit points, it is destroyed and your Trigger Holder deactivates.</p>
+            <p>If your Trigger Holder is deactivated while your Trion Body has more than half its max hit points, you regain 3 Trion Points.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_RADAR" />
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_RADAR" />
+        </rules>
+    </element>
+    <element name="Trigger Specialization" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_SPECIALIZATION">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>Starting at 3rd level, you've trained with certain types of Triggers. Select a classification to gain bonuses in. You gain an additional specialization at level 13.</p>
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Trigger Specialization (Archetype)" supports="WT Archetype" number="1" />
+            <select type="Archetype" name="Trigger Specialization (Archetype)" supports="WT Archetype" number="1" level="13" />
+        </rules>
+    </element>
+    <element name="Attacker" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER">
+        <supports>WT_Archetype</supports>
+        <requirements>!ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER</requirements>
+        <description>
+            <p>When you make a melee attack with an Attacker Trigger, you have +1 to hit and +2 to damage on a hit.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Attacker)">
+            <p>When you make a melee attack with an Attacker Trigger, you have +1 to hit and +2 to damage on a hit.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER">
+        <supports>WT_Archetype</supports>
+        <requirements>!ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER</requirements>
+        <description>
+            <p>You can add your Wisdom modifier to the damage your Shooter Triggers deal on a hit.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Shooter)">
+            <p>You can add your Wisdom modifier to the damage your Shooter Triggers deal on a hit.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Gunner" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER">
+        <supports>WT_Archetype</supports>
+        <requirements>!ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER</requirements>
+        <description>
+            <p>Three times per long rest, when you declare a ranged attack with a Gunner Trigger, you can make that attack a critical hit on a natural 19 as well as a natural 20.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Gunner)">
+            <p>Three times per long rest, when you declare a ranged attack with a Gunner Trigger, you can make that attack a critical hit on a natural 19 as well as a natural 20.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Sniper" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER">
+        <supports>WT_Archetype</supports>
+        <requirements>!ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER</requirements>
+        <description>
+            <p>You do not have disadvantage on ranged attacks you make with a Sniper Trigger due to the target being within the minimum range.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Sniper)">
+            <p>You do not have disadvantage on ranged attacks you make with a Sniper Trigger due to the target being within the minimum range.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Dodge" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_DODGE">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>Four times per long rest, when you take damage from an attack that does not require a saving throw, you can make a Dexterity saving throw of DC 20. On a success, you take half the damage that you would originally take.</p>
+        </description>
+        <sheet display="true">
+            <p>Four times per long rest, when you take damage from an attack that does not require a saving throw, you can make a Dexterity saving throw of DC 20. On a success, you take half the damage that you would originally take.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Composite Bullets" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_COMPOSITE_BULLETS">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>Starting at 15th level, you can merge Shooter Triggers together for powerful attacks.</p>
+            <p>When you use a Shooter Trigger, you can expend your bonus action to combine it with another Shooter Trigger. Your Shooter Trigger gains the properties and damage of the second Shooter Trigger for that use.</p>
+            <p>This requires you to spend the necessary Trion Points for both Shooter Triggers + 1.</p>
+        </description>
+        <sheet display="true">
+            <p>Starting at 15th level, you can merge Shooter Triggers together for powerful attacks.</p>
+            <p>When you use a Shooter Trigger, you can expend your bonus action to combine it with another Shooter Trigger. Your Shooter Trigger gains the properties and damage of the second Shooter Trigger for that use.</p>
+            <p>This requires you to spend the necessary Trion Points for both Shooter Triggers + 1.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Trigger Mastery" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_TRIGGER_MASTERY">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>Starting at level 17, you have mastered using certain Triggers. Select a mastery that you already have specialization in.</p>
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER_MASTERY" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER_MASTERY" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER_MASTERY" />
+            <div element="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER_MASTERY" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Trigger Mastery" supports="WT Mastery" number="1" />
+        </rules>
+    </element>
+    <element name="Attacker" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER_MASTERY">
+        <supports>WT_Mastery</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_ATTACKER</requirements>
+        <description>
+            <p>While you are wielding an Attacker Trigger, your AC increases by 2.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Attacker)">
+            <p>While you are wielding an Attacker Trigger, your AC increases by 2.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER_MASTERY">
+        <supports>WT_Mastery</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SHOOTER</requirements>
+        <description>
+            <p>The DCs and attack rolls (to hit) for your Shooter Triggers increase by 2.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Shooter)">
+            <p>The DCs and attack rolls (to hit) for your Shooter Triggers increase by 2.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Gunner" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER_MASTERY">
+        <supports>WT_Mastery</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_GUNNER</requirements>
+        <description>
+            <p>Once per long rest, when you make a ranged attack with a Gunner Trigger, you can spend 2 Trion Points to declare the attack a critical hit.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Gunner)">
+            <p>Once per long rest, when you make a ranged attack with a Gunner Trigger, you can spend 2 Trion Points to declare the attack a critical hit.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Sniper" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER_MASTERY">
+        <supports>WT_Mastery</supports>
+        <requirements>ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_SNIPER</requirements>
+        <description>
+            <p>When making a ranged attack with a Sniper Trigger against a target within the range constraints of the Sniper Trigger, you gain advantage on the attack roll. On a hit with a Sniper Trigger, you deal +2 damage.</p>
+        </description>
+        <sheet display="true" alt="Trigger Mastery (Sniper)">
+            <p>When making a ranged attack with a Sniper Trigger against a target within the range constraints of the Sniper Trigger, you gain advantage on the attack roll. On a hit with a Sniper Trigger, you deal +2 damage.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Potent Trion" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_FEATURE_TRIGGER_USER_POTENT_TRION">
+        <supports>ID_DSQD_TRIGGER_CLASS_TRIGGER_USER</supports>
+        <description>
+            <p>All of your Triggers deal increased damage. Whatever the Trigger's damage die is (d6, d8, etc.), add an additional die for all attacks.</p>
+        </description>
+        <sheet display="true">
+            <p>All of your Triggers deal increased damage. Whatever the Trigger's damage die is (d6, d8, etc.), add an additional die for all attacks.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="None" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_NONE_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <description>
+            <p>Select nothing as your extra Trigger. This will be your only option if you do not have Asteroid or Meteor equipped.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Rifle (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_RIFLE_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT))</requirements>
+        <description>
+            <p>Select the Rifle (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Launcher (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LAUNCHER_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_METEOR_LEFT) || (ID_DSQD_TRIGGER_SELECTION_METEOR_RIGHT)), [level:7]</requirements>
+        <description>
+            <p>Select the Launcher (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Handgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_HANDGUN_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT))</requirements>
+        <description>
+            <p>Select the Handgun (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Minigun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_MINIGUN_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT)), [level:7]</requirements>
+        <description>
+            <p>Select the Minigun (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Shotgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SHOTGUN_CENTER">
+        <supports>WT_Gunner, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT)), [level:4]</requirements>
+        <description>
+            <p>Select the Shotgun (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Eaglet (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_EAGLET_CENTER">
+        <supports>WT_Sniper, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT))</requirements>
+        <description>
+            <p>Select the Eaglet (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Ibis (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_IBIS_CENTER">
+        <supports>WT_Sniper, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT))</requirements>
+        <description>
+            <p>Select the Ibis (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Lightning (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LIGHTNING_CENTER">
+        <supports>WT_Sniper, WT_Center</supports>
+        <requirements>((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT))</requirements>
+        <description>
+            <p>Select the Lightning (see Weapons) as your extra Trigger.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Kogetsu (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_KOGETSU_LEFT">
+        <supports>WT_Attacker, WT_Left</supports>
+        <description>
+            <p>Select the Kogetsu (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Raygust (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_RAYGUST_LEFT">
+        <supports>WT_Attacker, WT_Left</supports>
+        <description>
+            <p>Select the Raygust (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Scorpion (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SCORPION_LEFT">
+        <supports>WT_Attacker, WT_Left</supports>
+        <description>
+            <p>Select the Scorpion (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Kogetsu: Spear (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_LEFT">
+        <supports>WT_Attacker, WT_Left</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select the Kogetsu: Spear (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Sogetsu (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SOGETSU_LEFT">
+        <supports>WT_Attacker, WT_Left</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select the Sogetsu (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Asteroid (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT">
+        <supports>WT_Shooter, WT_Left</supports>
+        <description>
+            <p>Select Asteroid as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_ASTEROID_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Asteroid (Left)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Hound (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_HOUND_LEFT">
+        <supports>WT_Shooter, WT_Left</supports>
+        <description>
+            <p>Select Hound as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_HOUND_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Hound (Left)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Meteor (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_METEOR_LEFT">
+        <supports>WT_Shooter, WT_Left</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Meteor as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_METEOR_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Meteor (Left)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Viper (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_VIPER_LEFT">
+        <supports>WT_Shooter, WT_Left</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Viper as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_VIPER_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Viper (Left)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Rifle (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_RIFLE_LEFT">
+        <supports>WT_Gunner, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT</requirements>
+        <description>
+            <p>Select the Rifle (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Launcher (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LAUNCHER_LEFT">
+        <supports>WT_Gunner, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_METEOR_RIGHT, [level:7]</requirements>
+        <description>
+            <p>Select the Launcher (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Handgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_HANDGUN_LEFT">
+        <supports>WT_Gunner, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT</requirements>
+        <description>
+            <p>Select the Handgun (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Minigun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_MINIGUN_LEFT">
+        <supports>WT_Gunner, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT, [level:7]</requirements>
+        <description>
+            <p>Select the Minigun (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Shotgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SHOTGUN_LEFT">
+        <supports>WT_Gunner, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT, [level:4]</requirements>
+        <description>
+            <p>Select the Shotgun (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Eaglet (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_EAGLET_LEFT">
+        <supports>WT_Sniper, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT</requirements>
+        <description>
+            <p>Select the Eaglet (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Ibis (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_IBIS_LEFT">
+        <supports>WT_Sniper, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT</requirements>
+        <description>
+            <p>Select the Ibis (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Lightning (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LIGHTNING_LEFT">
+        <supports>WT_Sniper, WT_Left</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT</requirements>
+        <description>
+            <p>Select the Lightning (see Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Escudo (Defense)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_ESCUDO_LEFT">
+        <supports>WT_Defense, WT_Left</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Escudo as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_ESCUDO_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_ESCUDO_LEFT" />
+        </rules>
+    </element>
+    <element name="Shield (Defense)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SHIELD_LEFT">
+        <supports>WT_Defense, WT_Left</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Shield as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_SHIELD_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_SHIELD_LEFT" />
+        </rules>
+    </element>
+    <element name="Bagworm (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_BAGWORM_LEFT">
+        <supports>WT_Misc, WT_Left</supports>
+        <description>
+            <p>Select Bagworm (see World Trigger Weapons) as one of your left-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Chameleon (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_CHAMELEON_LEFT">
+        <supports>WT_Misc, WT_Left</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Chameleon as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_CHAMELEON_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_CHAMELEON_LEFT" />
+        </rules>
+    </element>
+    <element name="Dummy Beacon (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_DUMMY_BEACON_LEFT">
+        <supports>WT_Misc, WT_Left</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Dummy Beacon as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_LEFT" />
+        </rules>
+    </element>
+    <element name="Grasshopper (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_GRASSHOPPER_LEFT">
+        <supports>WT_Misc, WT_Left</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Grasshopper as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_LEFT" />
+        </rules>
+    </element>
+    <element name="Spider (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SPIDER_LEFT">
+        <supports>WT_Misc, WT_Left</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Spider as one of your left-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_SPIDER_LEFT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_SPIDER_LEFT" />
+        </rules>
+    </element>
+    <element name="Kogetsu: Phantom Dance (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_PHANTOM_DANCE_LEFT">
+        <supports>Kogetsu, Kogetsu:Spear, WT_Option, WT_Left</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_KOGETSU_LEFT) || (ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_LEFT))</requirements>
+        <description>
+            <p>When you make an attack with a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's left column, you can spend 2 Trion Points to gain advantage on the attack roll and lower the target's AC by 2 for that attack only.</p>
+        </description>
+        <sheet display="true">
+            <p>When you make an attack with a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's left column, you can spend 2 Trion Points to gain advantage on the attack roll and lower the target's AC by 2 for that attack only.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Kogetsu: Whirlwind (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_KOGETSU_WHIRLWIND_LEFT">
+        <supports>Kogetsu, Kogetsu:Spear, WT_Option, WT_Left</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_KOGETSU_LEFT) || (ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_LEFT))</requirements>
+        <description>
+            <p>While wielding a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's left column, you can spend 1 Trion Point to make a melee attack against a target up to 30 ft away from you that you have line of sight on.</p>
+        </description>
+        <sheet display="true">
+            <p>While wielding a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's left column, you can spend 1 Trion Point to make a melee attack against a target up to 30 ft away from you that you have line of sight on.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Raygust: Thruster (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_RAYGUST_THRUSTER_LEFT">
+        <supports>Raygust, WT_Option, WT_Left</supports>
+        <requirements>[level:10], ID_DSQD_TRIGGER_SELECTION_RAYGUST_LEFT</requirements>
+        <description>
+            <p>While wielding a Raygust that is equipped in your Trigger Holder's left column, you can spend 1 Trion Point to use one of the following effects.</p>
+            <p>a) Expend your bonus action to make a melee attack with Raygust against a target in range. This attack has +3 to hit.</p>
+            <p>b) When you make a melee attack with a Raygust equipped to your Trigger Holder's left column, the attack has +3 to hit and +5 to damage on a hit.</p>
+            <p>These effects do not stack.</p>
+        </description>
+        <sheet display="true">
+            <p>While wielding a Raygust that is equipped in your Trigger Holder's left column, you can spend 1 Trion Point to use one of the following effects.</p>
+            <p>a) Expend your bonus action to make a melee attack with Raygust against a target in range. This attack has +3 to hit.</p>
+            <p>b) When you make a melee attack with a Raygust equipped to your Trigger Holder's left column, the attack has +3 to hit and +5 to damage on a hit.</p>
+            <p>These effects do not stack.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter: Lead Bullet (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_SHOOTER_LEAD_BULLET_LEFT">
+        <supports>WT_Option, WT_Left</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_HOUND_LEFT) || (ID_DSQD_TRIGGER_SELECTION_VIPER_LEFT))</requirements>
+        <description>
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's left column or extra slot, you can spend 4 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Triggers:  The shooter Trigger does not deal damage. Instead, on a hit, the target(s) loses movement speed equal to the number of damage dice they would have taken times 5 for 1 hour. If the target's movement speed drops to half their original value or below, the target(s) has disadvantage on Dexterity rolls for the duration as well.</p>
+            <p>Reloading Gun-Types:  All attacks made with the Trigger you reload no longer deal damage. Instead, on a hit, the target loses 5 movement speed for every 3 clip ammo the attack uses (minimum 5 speed) for 1 hour. If the target's movement speed drops to half their original value or below, the target has disadvantage on Dexterity rolls for the duration as well. These effects are dismissed if you reload the affected Trigger again.</p>
+        </description>
+        <sheet diaplay="true">
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's left column or extra slot, you can spend 4 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Triggers:  The Shooter Trigger does not deal damage. Instead, on a hit, the target(s) loses movement speed equal to the number of damage dice they would have taken times 5 for 1 hour. If the target's movement speed drops to half their original value or below, the target(s) has disadvantage on Dexterity rolls for the duration as well.</p>
+            <p>Reloading Gun-Types:  All attacks made with the Trigger you reload no longer deal damage. Instead, on a hit, the target loses 5 movement speed for every 3 clip ammo the attack uses (minimum 5 speed) for 1 hour. If the target's movement speed drops to half their original value or below, the target has disadvantage on Dexterity rolls for the duration as well. These effects are dismissed if you reload the affected Trigger again.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter: Starmaker (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_STARMAKER_LEFT">
+        <supports>WT_Option, WT_Left</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT) || (ID_DSQD_TRIGGER_SELECTION_HOUND_LEFT) || (ID_DSQD_TRIGGER_SELECTION_METEOR_LEFT) || (ID_DSQD_TRIGGER_SELECTION_VIPER_LEFT))</requirements>
+        <description>
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's left column or extra slot, you can spend 2 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Trigger:  On a hit, the target becomes marked for 1 hour. Marked creatures will appear on the Radar Trigger regardless of any protections they may have against it, as long as they are in range of the Radar Trigger.</p>
+        </description>
+        <sheet display="true">
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's left column or extra slot, you can spend 2 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Trigger:  On a hit, the target becomes marked for 1 hour. Marked creatures will appear on the Radar Trigger regardless of any protections they may have against it, as long as they are in range of the Radar Trigger.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Kogetsu (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_KOGETSU_RIGHT">
+        <supports>WT_Attacker, WT_Right</supports>
+        <description>
+            <p>Select the Kogetsu (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Raygust (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_RAYGUST_RIGHT">
+        <supports>WT_Attacker, WT_Right</supports>
+        <description>
+            <p>Select the Raygust (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Scorpion (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SCORPION_RIGHT">
+        <supports>WT_Attacker, WT_Right</supports>
+        <description>
+            <p>Select the Scorpion (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Kogetsu: Spear (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_RIGHT">
+        <supports>WT_Attacker, WT_Right</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select the Kogetsu: Spear (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Sogetsu (Attacker)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SOGETSU_RIGHT">
+        <supports>WT_Attacker, WT_Right</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select the Sogetsu (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Asteroid (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT">
+        <supports>WT_Shooter, WT_Right</supports>
+        <description>
+            <p>Select Asteroid as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_ASTEROID_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Asteroid (Right)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Hound (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_HOUND_RIGHT">
+        <supports>WT_Shooter, WT_Right</supports>
+        <description>
+            <p>Select Hound as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_HOUND_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Hound (Right)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Meteor (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_METEOR_RIGHT">
+        <supports>WT_Shooter, WT_Right</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Meteor as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_METEOR_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Meteor (Right)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Viper (Shooter)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_VIPER_RIGHT">
+        <supports>WT_Shooter, WT_Right</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Viper as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_VIPER_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Viper (Right)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Trigger User" />
+        </rules>
+    </element>
+    <element name="Rifle (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_RIFLE_RIGHT">
+        <supports>WT_Gunner, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT</requirements>
+        <description>
+            <p>Select the Rifle (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Launcher (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LAUNCHER_RIGHT">
+        <supports>WT_Gunner, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_METEOR_LEFT, [level:7]</requirements>
+        <description>
+            <p>Select the Launcher (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Handgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_HANDGUN_RIGHT">
+        <supports>WT_Gunner, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT</requirements>
+        <description>
+            <p>Select the Handgun (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Minigun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_MINIGUN_RIGHT">
+        <supports>WT_Gunner, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT, [level:7]</requirements>
+        <description>
+            <p>Select the Minigun (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Shotgun (Gunner)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SHOTGUN_RIGHT">
+        <supports>WT_Gunner, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT, [level:4]</requirements>
+        <description>
+            <p>Select the Shotgun (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Eaglet (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_EAGLET_RIGHT">
+        <supports>WT_Sniper, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT</requirements>
+        <description>
+            <p>Select the Eaglet (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Ibis (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_IBIS_RIGHT">
+        <supports>WT_Sniper, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT</requirements>
+        <description>
+            <p>Select the Ibis (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Lightning (Sniper)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_LIGHTNING_RIGHT">
+        <supports>WT_Sniper, WT_Right</supports>
+        <requirements>ID_DSQD_TRIGGER_SELECTION_ASTEROID_LEFT</requirements>
+        <description>
+            <p>Select the Lightning (see Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Escudo (Defense)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_ESCUDO_RIGHT">
+        <supports>WT_Defense, WT_Right</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Escudo as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_ESCUDO_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_ESCUDO_RIGHT" />
+        </rules>
+    </element>
+    <element name="Shield (Defense)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SHIELD_RIGHT">
+        <supports>WT_Defense, WT_Right</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Shield as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_SHIELD_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_SHIELD_RIGHT" />
+        </rules>
+    </element>
+    <element name="Bagworm (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_BAGWORM_RIGHT">
+        <supports>WT_Misc, WT_Right</supports>
+        <description>
+            <p>Select Bagworm (see World Trigger Weapons) as one of your right-column Triggers.</p>
+        </description>
+        <sheet display="false" />
+        <rules />
+    </element>
+    <element name="Chameleon (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_CHAMELEON_RIGHT">
+        <supports>WT_Misc, WT_Right</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Chameleon as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_CHAMELEON_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_CHAMELEON_RIGHT" />
+        </rules>
+    </element>
+    <element name="Dummy Beacon (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_DUMMY_BEACON_RIGHT">
+        <supports>WT_Misc, WT_Right</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Dummy Beacon as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_DUMMY_BEACON_RIGHT" />
+        </rules>
+    </element>
+    <element name="Grasshopper (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_GRASSHOPPER_RIGHT">
+        <supports>WT_Misc, WT_Right</supports>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>Select Grasshopper as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_GRASSHOPPER_RIGHT" />
+        </rules>
+    </element>
+    <element name="Spider (Misc.)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_SELECTION_SPIDER_RIGHT">
+        <supports>WT_Misc, WT_Right</supports>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>Select Spider as one of your right-column Triggers.</p>
+            <div element="ID_DSQD_TRIGGER_SPELL_SPIDER_RIGHT" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_DSQD_TRIGGER_SPELL_SPIDER_RIGHT" />
+        </rules>
+    </element>
+    <element name="Kogetsu: Phantom Dance (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_PHANTOM_DANCE_RIGHT">
+        <supports>Kogetsu, Kogetsu:Spear, WT_Option, WT_Right</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_KOGETSU_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_RIGHT))</requirements>
+        <description>
+            <p>When you make an attack with a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's right column, you can spend 2 Trion Points to gain advantage on the attack roll and lower the target's AC by 2 for that attack only.</p>
+        </description>
+        <sheet display="true">
+            <p>When you make an attack with a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's right column, you can spend 2 Trion Points to gain advantage on the attack roll and lower the target's AC by 2 for that attack only.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Kogetsu: Whirlwind (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_KOGETSU_WHIRLWIND_RIGHT">
+        <supports>Kogetsu, Kogetsu:Spear, WT_Option, WT_Right</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_KOGETSU_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_KOGETSU_SPEAR_RIGHT))</requirements>
+        <description>
+            <p>While wielding a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's right column, you can spend 1 Trion Point to make a melee attack against a target up to 30 ft away from you that you have line of sight on.</p>
+        </description>
+        <sheet display="true">
+            <p>While wielding a Kogetsu or Kogetsu: Spear that is equipped in your Trigger Holder's right column, you can spend 1 Trion Point to make a melee attack against a target up to 30 ft away from you that you have line of sight on.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Raygust: Thruster (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_RAYGUST_THRUSTER_RIGHT">
+        <supports>Raygust, WT_Option, WT_Right</supports>
+        <requirements>[level:10], ID_DSQD_TRIGGER_SELECTION_RAYGUST_RIGHT</requirements>
+        <description>
+            <p>While wielding a Raygust that is equipped in your Trigger Holder's right column, you can spend 1 Trion Point to use one of the following effects.</p>
+            <p>a) Expend your bonus action to make a melee attack with Raygust against a target in range. This attack has +3 to hit.</p>
+            <p>b) When you make a melee attack with a Raygust equipped to your Trigger Holder's left column, the attack has +3 to hit and +5 to damage on a hit.</p>
+            <p>These effects do not stack.</p>
+        </description>
+        <sheet display="true">
+            <p>While wielding a Raygust that is equipped in your Trigger Holder's right column, you can spend 1 Trion Point to use one of the following effects.</p>
+            <p>a) Expend your bonus action to make a melee attack with Raygust against a target in range. This attack has +3 to hit.</p>
+            <p>b) When you make a melee attack with a Raygust equipped to your Trigger Holder's left column, the attack has +3 to hit and +5 to damage on a hit.</p>
+            <p>These effects do not stack.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter: Lead Bullet (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_SHOOTER_LEAD_BULLET_RIGHT">
+        <supports>WT_Option, WT_Right</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_HOUND_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_VIPER_RIGHT))</requirements>
+        <description>
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's right column or extra slot, you can spend 4 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Triggers:  The shooter Trigger does not deal damage. Instead, on a hit, the target(s) loses movement speed equal to the number of damage dice they would have taken times 5 for 1 hour. If the target's movement speed drops to half their original value or below, the target(s) has disadvantage on Dexterity rolls for the duration as well.</p>
+            <p>Reloading Gun-Types:  All attacks made with the Trigger you reload no longer deal damage. Instead, on a hit, the target loses 5 movement speed for every 3 clip ammo the attack uses (minimum 5 speed) for 1 hour. If the target's movement speed drops to half their original value or below, the target has disadvantage on Dexterity rolls for the duration as well. These effects are dismissed if you reload the affected Trigger again.</p>
+        </description>
+        <sheet diaplay="true">
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's right column or extra slot, you can spend 4 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Triggers:  The Shooter Trigger does not deal damage. Instead, on a hit, the target(s) loses movement speed equal to the number of damage dice they would have taken times 5 for 1 hour. If the target's movement speed drops to half their original value or below, the target(s) has disadvantage on Dexterity rolls for the duration as well.</p>
+            <p>Reloading Gun-Types:  All attacks made with the Trigger you reload no longer deal damage. Instead, on a hit, the target loses 5 movement speed for every 3 clip ammo the attack uses (minimum 5 speed) for 1 hour. If the target's movement speed drops to half their original value or below, the target has disadvantage on Dexterity rolls for the duration as well. These effects are dismissed if you reload the affected Trigger again.</p>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Shooter: Starmaker (Option)" type="Class Feature" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_OPTION_STARMAKER_RIGHT">
+        <supports>WT_Option, WT_Right</supports>
+        <requirements>[level:10], ((ID_DSQD_TRIGGER_SELECTION_ASTEROID_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_HOUND_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_METEOR_RIGHT) || (ID_DSQD_TRIGGER_SELECTION_VIPER_LEFT))</requirements>
+        <description>
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's right column or extra slot, you can spend 2 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Trigger:  On a hit, the target becomes marked for 1 hour. Marked creatures will appear on the Radar Trigger regardless of any protections they may have against it, as long as they are in range of the Radar Trigger.</p>
+        </description>
+        <sheet display="true">
+            <p>When using Asteroid, Hound, or Viper, or reloading a Gunner or Sniper Trigger that is equipped in your Trigger Holder's right column or extra slot, you can spend 2 Trion Points to gain the following effects for that use or reload.</p>
+            <p>Using Shooter Trigger:  On a hit, the target becomes marked for 1 hour. Marked creatures will appear on the Radar Trigger regardless of any protections they may have against it, as long as they are in range of the Radar Trigger.</p>
+        </sheet>
+        <rules />
+    </element>
+</elements>
