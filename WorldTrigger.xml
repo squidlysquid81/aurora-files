@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+		<name>World Trigger: Notebook's Subsection</name>
+		<update version="0.0.1">
+			<file name="WorldTrigger.xml" url="https://github.com/squidlysquid81/aurora-files/blob/main/WorldTrigger.xml" />
+		</update>
+	</info>
     <element name="World Trigger: Notebook's Subsection" type="Source" source="World Trigger: Notebook's Subsection" id="ID_DSQD_SOURCE_WORLD_TRIGGER_NOTEBOOK_SUBSECTION">
         <description>
             <p>A small collection of content based on the series 'World Trigger'. Original concepts are not mine, but I have written this file.</p>
