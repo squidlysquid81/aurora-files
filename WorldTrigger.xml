@@ -8,7 +8,7 @@
 	</info>
     <element name="World Trigger: Notebook's Subsection" type="Source" source="World Trigger: Notebook's Subsection" id="ID_DSQD_SOURCE_WORLD_TRIGGER_NOTEBOOK_SUBSECTION">
         <description>
-            <p>A small collection of content based on the series 'World Trigger'. Original concepts are not mine, but I have written this file.</p>
+            <p>A small collection of content based on the series 'World Trigger'. Original concepts are not mine, but I have written this file. TEST TEXT</p>
         </description>
         <setters>
             <set name="abbreviation">TRIGGER</set>
