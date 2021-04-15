@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<info>
+    <info>
 		<name>World Trigger: Notebook's Subsection</name>
 		<update version="0.0.1">
 			<file name="WorldTrigger.xml" url="https://github.com/squidlysquid81/aurora-files/blob/main/WorldTrigger.xml" />
@@ -17,7 +17,7 @@
             <set name="author" abbreviation="DSQD" url="https://aurorabuilder.com/">DaSquid</set>
             <set name="official">false</set>
             <set name="core">false</set>
-            <set name="release">202104XX</set>
+            <set name="release">20210412</set>
         </setters>
     </element>
     <element name="Trigger User" type="Class" source="World Trigger: Notebook's Subsection" id="ID_DSQD_TRIGGER_CLASS_TRIGGER_USER">
